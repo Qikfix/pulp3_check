@@ -2,6 +2,13 @@
 
 Script to verify the pulp task status in real time. Basically, you can pick the task in question, and then you will be able to see, every 3 seconds, the current status of all the sub tasks/activities.
 
+To download it
+```
+wget https://raw.githubusercontent.com/Qikfix/pulp3_check/main/pulp3_check.sh
+chmod +x pulp3_check.sh
+./pulp3_check.sh
+```
+
 When executing the script, in case there are tasks different from completed, then it will be visible in the list, as below
 
 ```
