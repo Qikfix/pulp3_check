@@ -109,5 +109,7 @@ Once there is no tasks, the expected output should be as below
 No tasks at this moment, exiting ...
 ```
 
+## Note. This script works on both, Satellite Server and Capsule Server.
+
 
 I hope you enjoy it!
