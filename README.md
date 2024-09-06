@@ -13,20 +13,28 @@ When executing the script, in case there are tasks different from completed, the
 
 ```
 ./pulp3_check.sh
-        "pulp_href": "/pulp/api/v3/tasks/0191be1a-2f17-7f80-9af6-4b58404b93af/",
-        "name": "pulp_rpm.app.tasks.synchronizing.synchronize",
-        "started_at": "2024-09-04T17:34:33.009685Z",
-        "finished_at": null,
+-[ RECORD 1 ]---------------------------------------------
+pulp_id     | 0191c590-a2e9-734d-8d66-27d6337328dc
+name        | pulp_rpm.app.tasks.synchronizing.synchronize
+started_at  | 2024-09-06 04:21:16.256139+00
+finished_at |
+state       | running
+
+
 Copy/Paste the ID you would like to inspect (e.g. 0191be1a-2f17-7f80-9af6-4b58404b93af):
 ```
 
 With that, you can copy/paste the UUID, and start checking
 ```
 ./pulp3_check.sh
-        "pulp_href": "/pulp/api/v3/tasks/0191be1a-2f17-7f80-9af6-4b58404b93af/",
-        "name": "pulp_rpm.app.tasks.synchronizing.synchronize",
-        "started_at": "2024-09-04T17:34:33.009685Z",
-        "finished_at": null,
+-[ RECORD 1 ]---------------------------------------------
+pulp_id     | 0191c590-a2e9-734d-8d66-27d6337328dc
+name        | pulp_rpm.app.tasks.synchronizing.synchronize
+started_at  | 2024-09-06 04:21:16.256139+00
+finished_at |
+state       | running
+
+
 Copy/Paste the ID you would like to inspect (e.g. 0191be1a-2f17-7f80-9af6-4b58404b93af): 0191be1a-2f17-7f80-9af6-4b58404b93af
 0191be1a-2f17-7f80-9af6-4b58404b93af
 ### Press CTRL+C to STOP! ###
@@ -100,6 +108,8 @@ Once there is no tasks, the expected output should be as below
 ./pulp3_check.sh
 No tasks at this moment, exiting ...
 ```
+
+## Note. This script works on both, Satellite Server and Capsule Server.
 
 
 I hope you enjoy it!
